@@ -22,6 +22,15 @@ year	= {2016}
 You can reproduce our qualitative result using this bagfile. You can also visualize the point-cloud on the RViz software together with the laserscan of the facade.
 
 
+## Code
+
+The code that we developed is a extention of OKVIS [link]. On this repository you can find the part of the code that implement the algorithm described in the our paper. You have to adapt in order to with your code, but it is a fairly simple implementation. There are small improviments and adaptation, mainly in the rasterization part. We recomend instead of use this code, you should run the code already integrate on OKVIS. We will give the instructions below. 
+
+### License
+The original OKVIS is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website <http://www.geom.at/> . The new rasterization code is inpired by the Scratchapixel.com's Tutorial and they request GPLv3 license. We will be working to remove this dependence in the future but ,in summary, by now, this code only can be used for Research and under GPLv3 license. 
+
+
+
 
 ## Datasets
 

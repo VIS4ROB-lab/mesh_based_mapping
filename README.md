@@ -19,8 +19,8 @@ year	= {2016}
 ```
 
 ## Qualitative Result
-You can reproduce our qualitative result using this bagfile. You can download here the [bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmT3hiV3pPakdrTXc) and [laserscan](https://drive.google.com/open?id=0B82ekrhU9sDmN2QyOFlFNHA5c2c). You can also visualize the point-cloud on the RViz software together with the laserscan of the facade. You only need to use rosbag play to run the bagfile. You can use the ros node read from the package [ethz-asl:point_cloud_io](
-https://github.com/ethz-asl/point_cloud_io)
+You can reproduce our qualitative result using this bagfile. You can download here the [bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmT3hiV3pPakdrTXc) and [laserscan](https://drive.google.com/open?id=0B82ekrhU9sDmN2QyOFlFNHA5c2c). You can also visualize the point-cloud on the RViz software together with the laserscan of the facade. You only need to use *rosbag play* to run the bagfile. You can use the ros node *read* from the package [ethz-asl:point_cloud_io](
+https://github.com/ethz-asl/point_cloud_io).
 
 ## Code
 

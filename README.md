@@ -58,10 +58,10 @@ alt="Ground" width="200"  border="10" /></a>
 ### Calibration
 The images where captured using a [VI-Sensor]() and calibrated using [ETHZ ASL Kalibr](). We show below the calibration result. Most values are straitforward. T_SC is the transformation from the Camera to the Sensor(IMU). There is two sets of values, camera0's intrinsics and camera1's intrinsics, respectively. 
 
-cameras:
+```python
 
-    - {T_SC: 
-    
+cameras:
+    - {T_SC:     
         [ 0.9999921569165363, 0.003945890103835121, 0.0003406709575200133, -0.030976405894694664,
         
          -0.003948017768440125, 0.9999711543561547, 0.0064887295612456805, 0.003944069243840622,
@@ -83,3 +83,4 @@ cameras:
         distortion_type: equidistant,
         focal_length: [456.3683366282091, 455.03924786357857],
         principal_point: [375.1783411236692, 238.22971133267725]}
+```

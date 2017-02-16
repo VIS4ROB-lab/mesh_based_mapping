@@ -24,11 +24,12 @@ https://github.com/ethz-asl/point_cloud_io).
 
 ## Code
 
-The code that we developed is a extention of OKVIS [link]. On this repository you can find the part of the code that implement the algorithm described in the our paper. You have to adapt in order to with your code, but it is a fairly simple implementation. There are small improviments and adaptation, mainly in the rasterization part. We recomend instead of use this code, you should run the code already integrate on OKVIS. We will give the instructions below. 
+The code that we developed is an extention of [OKVIS](https://github.com/ethz-asl/okvis). On this repository you can find the part of the code that implement the algorithm described in the our paper. You have to adapt in order to with your code, but it is a fairly simple implementation. There are small improviments and adaptation, mainly in the rasterization part. We recomend instead of use this code, you should run the code already integrate on OKVIS. We will give the instructions below. 
 
 ### License
-The original OKVIS is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website <http://www.geom.at/> . The new rasterization code is inpired by the Scratchapixel.com's Tutorial and they request GPLv3 license. We will be working to remove this dependence in the future but , in summary, by now, this code only can be used for Research and under GPLv3 license. 
+The original [OKVIS](https://github.com/ethz-asl/okvis) is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website http://www.geom.at/ . The new rasterization code is inpired by the [Scratchapixel.com's Tutorial](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) and they request GPLv3 license. We will be working to remove this dependence in the future but, in summary, by now, this code only can be used for Research and under GPLv3 license. 
 
+### Working Example
 
 
 
@@ -46,17 +47,17 @@ alt="Ground" width="200"  border="10" /></a>
 
 
 ### Data
-**Aerial 1** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmTTdIeFJXTlBBLVE)  -  [Youtube](https:/ /www.youtube.com/embed/SA4KoRjvx04)
+**Aerial 1** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmTTdIeFJXTlBBLVE) - [Youtube](http:/ /www.youtube.com/embed/SA4KoRjvx04)
 
-**Aerial 2** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmNjZiMTUxUWlHcnc)  -  [Youtube](https:  //www.youtube.com/embed/FEQiClIlLZI)
+**Aerial 2** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmNjZiMTUxUWlHcnc) - [Youtube](http:  //www.youtube.com/embed/FEQiClIlLZI)
  
-**Aerial 3** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmOUkzX2xrMWRSMEE)  -  [Youtube](https://www.youtube.com/embed/HLIJ59BRaBo)
+**Aerial 3** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmOUkzX2xrMWRSMEE) - [Youtube](http://www.youtube.com/embed/HLIJ59BRaBo)
 
-**Ground** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmTjVweklrNGdJTjA)  -  [Youtube](https://www.youtube.com/embed/a-ITwYMPzZs)
+**Ground** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmTjVweklrNGdJTjA) - [Youtube](http://www.youtube.com/embed/a-ITwYMPzZs)
 
 
 ### Calibration
-The images where captured using a [VI-Sensor]() and calibrated using [ETHZ ASL Kalibr](). We show below the calibration result. Most values are straitforward. T_SC is the transformation from the Camera to the Sensor(IMU). There is two sets of values, camera0's intrinsics and camera1's intrinsics, respectively. 
+The images where captured using a [VI-Sensor](http://wiki.ros.org/vi_sensor) and calibrated using [ETHZ ASL Kalibr](https://github.com/ethz-asl/kalibr). We show below the calibration result. Most values are straitforward. T_SC is the transformation from the Camera to the Sensor(IMU). There is two sets of values, camera0's intrinsics and camera1's intrinsics, respectively.
 
 ```python
 

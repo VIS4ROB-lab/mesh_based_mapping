@@ -24,19 +24,19 @@ https://github.com/ethz-asl/point_cloud_io).
 
 ## Code
 
-The code that we developed is an extention of [OKVIS](https://github.com/ethz-asl/okvis). On this repository you can find the part of the code that implement the algorithm described in the our paper. You have to adapt in order to with your code, but it is a fairly simple implementation. There are small improviments and adaptation, mainly in the rasterization part. We recomend instead of use this code, you should run the code already integrate on OKVIS. We will give the instructions below. 
+The code that we developed is an extension of [OKVIS](https://github.com/ethz-asl/okvis). On this repository you can find the part of the code that implement the algorithm described in the our paper. You have to adapt in order to with your code, but it is a fairly simple implementation. There are small improvements and adaptation, mainly in the rasterization part. We recommend instead of use this code, you should run the code already integrate on OKVIS. We will give the instructions below. 
 
 ### Working Example
-This example embeded our code inside OKVIS. We also have added a new topic to publish a point cloud that is sampled over the mesh. 
+This example embedded our code inside OKVIS. We also have added a new topic to publish a point cloud that is sampled over the mesh. 
 
-If you use the example code, please acknologe our paper, OKVIS papers and the Fade2d library.
+If you use the example code, please acknowledge our paper, OKVIS papers and the Fade2d library.
 
 ### License
-The original [OKVIS](https://github.com/ethz-asl/okvis) is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website http://www.geom.at/ . The new rasterization code is inpired by the [Scratchapixel.com's Tutorial](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) and they request GPLv3 license. We will be working to remove this dependence in the future, but, in summary, this code only can be used for research and under GPLv3 license. 
+The original [OKVIS](https://github.com/ethz-asl/okvis) is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website http://www.geom.at/ . The new rasterization code is inspired by the [Scratchapixel.com's Tutorial](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) and they request GPLv3 license. We will be working to remove this dependence in the future, but, in summary, this code only can be used for research and under GPLv3 license. 
 
 
 #### Dependences
-This code was tested on the Ubuntu 14.04 and using ROS Indigo. Our code should work on the same environment that OKVIS works, but we have a extra dependency that is the Fade2D. We added the Fade2D binaries on the example code. If you wanna run in another distribution you have to change the Fade2D library on the CMakelist. 
+This code was tested on the Ubuntu 14.04 and using ROS Indigo. Our code should work on the same environment that OKVIS works, but we have a extra dependency that is the Fade2D. We added the Fade2D binaries on the example code. If you wanna run in another distribution you have to change the Fade2D library on the main CMakeLists. 
 
 ```bash
 sudo apt-get install cmake ros-indigo-pcl-ros libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev libboost-dev libboost-filesystem-dev libopencv-dev
@@ -95,7 +95,7 @@ alt="Ground" width="200"  border="10" /></a>
 
 
 ### Calibration
-The images where captured using a [VI-Sensor](http://wiki.ros.org/vi_sensor) and calibrated using [ETHZ ASL Kalibr](https://github.com/ethz-asl/kalibr). We show below the calibration result. Most values are straitforward. T_SC is the transformation from the Camera to the Sensor(IMU). There is two sets of values, camera0's intrinsics and camera1's intrinsics, respectively.
+The images where captured using a [VI-Sensor](http://wiki.ros.org/vi_sensor) and calibrated using [ETHZ ASL Kalibr](https://github.com/ethz-asl/kalibr). We show below the calibration result. Most values are straightforward. T_SC is the transformation from the Camera to the Sensor(IMU). There is two sets of values, camera0's intrinsics and camera1's intrinsics, respectively.
 
 ```python
 

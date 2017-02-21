@@ -31,6 +31,10 @@ This example embeded our code inside OKVIS. We also have added a new topic to pu
 
 If you use the example code, please acknologe our paper, OKVIS papers and the Fade2d library.
 
+### License
+The original [OKVIS](https://github.com/ethz-asl/okvis) is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website http://www.geom.at/ . The new rasterization code is inpired by the [Scratchapixel.com's Tutorial](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) and they request GPLv3 license. We will be working to remove this dependence in the future, but, in summary, this code only can be used for research and under GPLv3 license. 
+
+
 #### Dependences
 This code was tested on the Ubuntu 14.04 and using ROS Indigo. Our code should work on the same environment that OKVIS works, but we have a extra dependency that is the Fade2D. We added the Fade2D binaries on the example code. If you wanna run in another distribution you have to change the Fade2D library on the CMakelist. 
 
@@ -38,23 +42,36 @@ This code was tested on the Ubuntu 14.04 and using ROS Indigo. Our code should w
 sudo apt-get install cmake ros-indigo-pcl-ros libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev libboost-dev libboost-filesystem-dev libopencv-dev
 ```
 
-#### ROS Catkin
+#### Building
 The best way to try this example is creating a new catkin workspace. In case of you use an old workspace, you cannot have okvis_ros inside, given we did not change the name of the package. The installation instruction from the [okvis_ros github repository](https://github.com/ethz-asl/okvis_ros) is also a good source of information.
 
+
 ```bash
+cd ~/catkin_ws/src
 git clone --recursive https://github.com/weblucas/okvis_ros_mesh_mapping.git
+cd ..
+catkin build
 ```
 
 #### Running
 
-### License
-The original [OKVIS](https://github.com/ethz-asl/okvis) is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website http://www.geom.at/ . The new rasterization code is inpired by the [Scratchapixel.com's Tutorial](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) and they request GPLv3 license. We will be working to remove this dependence in the future but, in summary, by now, this code only can be used for Research and under GPLv3 license. 
+You can see our algorithm running using the provided launch file and one of the bagfiles from our ETHZ_V4RL-CAB Dataset. The links are in the next section. The configuration file *config_fpga_v4r4.yaml* already contains the calibration data for this dataset, but only using one camera.
+
+In one terminal you should run the line below just changing the location of the bagfile that you download.
+```bash
+roslaunch okvis_ros okvis_node_synchronous_iros_aerial_2.launch \
+           bagfile:=/home/lucas/data/iros16/ethz_v4rl_ground.bag
+```
+
+In another terminal you should run rviz with our configuration file
+```bash
+rviz -d /home/lucas/catkin_ws/src/okvis_ros_mesh_mapping/config/rviz.rviz
+```
 
 
 
 
-
-## ETHZ_V4RL-CAB Datasets
+## ETHZ_V4RL-CAB Dataset
 
 ### Examples
 <a href="https://www.youtube.com/embed/SA4KoRjvx04" target="_blank"><img src="http://img.youtube.com/vi/SA4KoRjvx04/0.jpg" 

@@ -59,7 +59,7 @@ You can see our algorithm running using the provided launch file and one of the 
 
 In one terminal you should run the line below just changing the location of the bagfile that you download.
 ```bash
-roslaunch okvis_ros okvis_node_synchronous_iros_aerial_2.launch \
+roslaunch okvis_ros okvis_node_synchronous_mesh_mapping.launch \
            bagfile:=/home/lucas/data/iros16/ethz_v4rl_ground.bag
 ```
 

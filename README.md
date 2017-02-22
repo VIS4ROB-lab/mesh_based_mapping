@@ -10,9 +10,9 @@ If you use this Code or Dataset, please cite the following publication:
 ```
  @inproceedings{Teixeira:etal:IROS2016,
 title	    = {{Real-Time Mesh-based Scene Estimation for Aerial Inspection}},
-author	   = {Lucas Teixeira and Margarita Chli},
+author	    = {Lucas Teixeira and Margarita Chli},
 booktitle	= {Proceedings of the {IEEE/RSJ} Conference on Intelligent Robots and Systems({IROS})},
-year	     = {2016}
+year	    = {2016}
 }
 ```
 

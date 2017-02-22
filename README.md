@@ -1,5 +1,5 @@
-# Code and Dataset of the paper "Real-Time Mesh-based Scene Estimation for Aerial Inspection" - IROS 2016
-Real-Time Mesh-based Scene Estimation for Aerial Inspection
+# Code & Dataset for mesh-based scene estimation 
+"Real-Time Mesh-based Scene Estimation for Aerial Inspection", Lucas Teixeira and Margarita Chli, IROS 2016
 ### Video
 <a href="https://www.youtube.com/embed/LvmBjMvmZKA" target="_blank"><img src="http://img.youtube.com/vi/LvmBjMvmZKA/0.jpg" 
 alt="Mesh" width="240" height="180" border="10" /></a>

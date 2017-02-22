@@ -121,3 +121,11 @@ cameras:
         focal_length: [456.3683366282091, 455.03924786357857],
         principal_point: [375.1783411236692, 238.22971133267725]}
 ```
+
+
+#Contact
+Please create an issue if you have questions or bug reports. Alternatively, you can also contact me at lteixeira@mavt.ethz.ch.
+ 
+ 
+ 
+ 

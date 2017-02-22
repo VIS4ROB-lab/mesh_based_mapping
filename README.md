@@ -31,7 +31,7 @@ sudo apt-get install cmake ros-indigo-pcl-ros libgoogle-glog-dev libatlas-base-d
 ```
 
 ### Building
-The best way to try out this code is by creating a new catkin workspace. Using an old workspace, will not allow the proper functioning of okvis_ros as the name of the package was not changed. The installation instructions in the [okvis_ros github repository](https://github.com/ethz-asl/okvis_ros) is a useful source of information.
+The best way to try out this code is by creating a new catkin workspace. Using an old workspace, will not allow the proper functioning of okvis_ros as the name of the package was not changed. The installation instructions in the [okvis_ros github repository](https://github.com/ethz-asl/okvis_ros) are a useful source of information.
 
 ```bash
 cd ~/catkin_ws/src

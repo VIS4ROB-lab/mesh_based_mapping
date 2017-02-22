@@ -5,7 +5,7 @@ This work is described in the paper "Real-Time Mesh-based Scene Estimation for A
 <a href="https://www.youtube.com/embed/LvmBjMvmZKA" target="_blank"><img src="http://img.youtube.com/vi/LvmBjMvmZKA/0.jpg" 
 alt="Mesh" width="240" height="180" border="10" /></a>
 
-If you use this Code or Datasets, please cite the relevant paper following publication:
+If you use this Code or Dataset, please cite the following publication:
  
 ```
  @inproceedings{Teixeira:etal:IROS2016,
@@ -15,10 +15,6 @@ booktitle	= {Proceedings of the {IEEE/RSJ} Conference on Intelligent Robots and 
 year	= {2016}
 }
 ```
-
-## Qualitative Result
-You can reproduce our qualitative result using this bagfile. You can download here the [bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmT3hiV3pPakdrTXc) and [laserscan](https://drive.google.com/open?id=0B82ekrhU9sDmN2QyOFlFNHA5c2c). You can also visualize the point-cloud on the RViz software together with the laserscan of the facade. You only need to use *rosbag play* to run the bagfile. You can use the ros node *read* from the package [ethz-asl:point_cloud_io](
-https://github.com/ethz-asl/point_cloud_io).
 
 ## Code
 
@@ -119,7 +115,9 @@ cameras:
         focal_length: [456.3683366282091, 455.03924786357857],
         principal_point: [375.1783411236692, 238.22971133267725]}
 ```
-
+## Qualitative Results
+You can reproduce the qualitative results of our [paper](http://ieeexplore.ieee.org/document/7759714/) using this [bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmT3hiV3pPakdrTXc) and this ground-truth [laser scan](https://drive.google.com/open?id=0B82ekrhU9sDmN2QyOFlFNHA5c2c). You can also visualize the point-cloud inside the RViz software together with the laser scan of the facade. You only need to use *rosbag play* to run the bagfile. You can use the ros node *read* from the package [ethz-asl:point_cloud_io](
+https://github.com/ethz-asl/point_cloud_io).
 
 #Contact
 Please create an issue if you have questions or bug reports. Alternatively, you can also contact me at lteixeira@mavt.ethz.ch.

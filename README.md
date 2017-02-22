@@ -9,36 +9,29 @@ If you use this Code or Dataset, please cite the following publication:
  
 ```
  @inproceedings{Teixeira:etal:IROS2016,
-title	= {{Real-Time Mesh-based Scene Estimation for Aerial Inspection}},
-author	= {Lucas Teixeira and Margarita Chli},
+title	    = {{Real-Time Mesh-based Scene Estimation for Aerial Inspection}},
+author	   = {Lucas Teixeira and Margarita Chli},
 booktitle	= {Proceedings of the {IEEE/RSJ} Conference on Intelligent Robots and Systems({IROS})},
-year	= {2016}
+year	     = {2016}
 }
 ```
 
 ## Code
 
-The code that we developed is an extension of [OKVIS](https://github.com/ethz-asl/okvis). On this repository you can find the part of the code that implement the algorithm described in the our paper. You have to adapt in order to with your code, but it is a fairly simple implementation. There are small improvements and adaptation, mainly in the rasterization part. We recommend instead of use this code, you should run the code already integrate on OKVIS. We will give the instructions below. 
-
-### Working Example
-This example embedded our code inside OKVIS. We also have added a new topic to publish a point cloud that is sampled over the mesh. 
-
-If you use the example code, please acknowledge our paper, OKVIS papers and the Fade2d library.
+This code is based on the [OKVIS](https://github.com/ethz-asl/okvis) VI-SLAM system, but adaptation to other SLAM systems is straightforward. A new topic has been added to publish a point cloud that is sampled over the mesh that is being constructed. As this code is based on OKVIS and the Fade2D library, please acknowledge them together with the paper mentioned above.
 
 ### License
-The original [OKVIS](https://github.com/ethz-asl/okvis) is BSD, but we use two libraries that are not. Fade2D is a commercial software that can be used for research proposes for free. Please check their website http://www.geom.at/ . The new rasterization code is inspired by the [Scratchapixel.com's Tutorial](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) and they request GPLv3 license. We will be working to remove this dependence in the future, but, in summary, this code only can be used for research and under GPLv3 license. 
-
+This code can be used for research purposes for free under a GPLv3 license. The original [OKVIS](https://github.com/ethz-asl/okvis) software has a BSD license, but we use two libraries that are not: Fade2D is a commercial software that can be used for research proposes for free (please check their website http://www.geom.at/), while [Scratchapixel.com](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) requests GPLv3 license. We will be working to remove this latter dependence in the future. 
 
 #### Dependences
-This code was tested on the Ubuntu 14.04 and using ROS Indigo. Our code should work on the same environment that OKVIS works, but we have a extra dependency that is the Fade2D. We added the Fade2D binaries on the example code. If you wanna run in another distribution you have to change the Fade2D library on the main CMakeLists. 
+This code is tested for Ubuntu 14.04 and ROS Indigo. If you want to run it on a different configuration you will have to change the pointer to the Fade2D library in the main CMakeLists. Note that the Fade2D binaries are included in this code. 
 
 ```bash
 sudo apt-get install cmake ros-indigo-pcl-ros libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev libboost-dev libboost-filesystem-dev libopencv-dev
 ```
 
 #### Building
-The best way to try this example is creating a new catkin workspace. In case of you use an old workspace, you cannot have okvis_ros inside, given we did not change the name of the package. The installation instruction from the [okvis_ros github repository](https://github.com/ethz-asl/okvis_ros) is also a good source of information.
-
+The best way to try out this code is by creating a new catkin workspace. Using an old workspace, will not allow the proper functioning of okvis_ros as the name of the package was not changed. The installation instructions in the [okvis_ros github repository](https://github.com/ethz-asl/okvis_ros) is a useful source of information.
 
 ```bash
 cd ~/catkin_ws/src
@@ -49,21 +42,18 @@ catkin build
 
 #### Running
 
-You can see our algorithm running using the provided launch file and one of the bagfiles from our ETHZ_V4RL-CAB Dataset. The links are in the next section. The configuration file *config_fpga_v4r4.yaml* already contains the calibration data for this dataset, but only using one camera.
+Use the provided launch file and one of the bagfiles from our ETHZ_V4RL-CAB Dataset (links below) to run this code. The configuration file *config_fpga_v4r4.yaml* already contains the calibration data for this dataset, using one camera.
 
-In one terminal you should run the line below just changing the location of the bagfile that you download.
+Type the following in a terminal and change the location of the bagfile that you download, accordingly:
 ```bash
 roslaunch okvis_ros okvis_node_synchronous_mesh_mapping.launch \
            bagfile:=/home/lucas/data/iros16/ethz_v4rl_ground.bag
 ```
 
-In another terminal you should run rviz with our configuration file
+In another terminal you should run Rviz with our configuration file:
 ```bash
 rviz -d /home/lucas/catkin_ws/src/okvis_ros_mesh_mapping/config/rviz.rviz
 ```
-
-
-
 
 ## ETHZ_V4RL-CAB Dataset
 
@@ -89,7 +79,7 @@ alt="Ground" width="200"  border="10" /></a>
 
 
 ### Calibration
-The images where captured using a [VI-Sensor](http://wiki.ros.org/vi_sensor) and calibrated using [ETHZ ASL Kalibr](https://github.com/ethz-asl/kalibr). We show below the calibration result. Most values are straightforward. T_SC is the transformation from the Camera to the Sensor(IMU). There is two sets of values, camera0's intrinsics and camera1's intrinsics, respectively.
+The images were captured using a [VI-Sensor](http://wiki.ros.org/vi_sensor) and calibrated using [ETHZ ASL Kalibr](https://github.com/ethz-asl/kalibr). Below are the calibration parameters. Note that T_SC is the transformation from the Camera to the Sensor(IMU). The two sets of values correspond to camera0's intrinsics and camera1's intrinsics, respectively.
 
 ```python
 
@@ -120,7 +110,7 @@ You can reproduce the qualitative results of our [paper](http://ieeexplore.ieee.
 https://github.com/ethz-asl/point_cloud_io).
 
 #Contact
-Please create an issue if you have questions or bug reports. Alternatively, you can also contact me at lteixeira@mavt.ethz.ch.
+For any questions or bug reports, please create an issue if you have questions or bug reports. Alternatively, you can also contact me at lteixeira@mavt.ethz.ch. 
  
  
  

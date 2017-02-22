@@ -23,14 +23,14 @@ This code is based on the [OKVIS](https://github.com/ethz-asl/okvis) VI-SLAM sys
 ### License
 This code can be used for research purposes for free under a GPLv3 license. The original [OKVIS](https://github.com/ethz-asl/okvis) software has a BSD license, but we use two libraries that are not: Fade2D is a commercial software that can be used for research proposes for free (please check their website http://www.geom.at/), while [Scratchapixel.com](http://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation) requests GPLv3 license. We will be working to remove this latter dependence in the future. 
 
-#### Dependences
+### Environment
 This code is tested for Ubuntu 14.04 and ROS Indigo. If you want to run it on a different configuration you will have to change the pointer to the Fade2D library in the main CMakeLists. Note that the Fade2D binaries are included in this code. 
 
 ```bash
 sudo apt-get install cmake ros-indigo-pcl-ros libgoogle-glog-dev libatlas-base-dev libeigen3-dev libsuitesparse-dev libboost-dev libboost-filesystem-dev libopencv-dev
 ```
 
-#### Building
+### Building
 The best way to try out this code is by creating a new catkin workspace. Using an old workspace, will not allow the proper functioning of okvis_ros as the name of the package was not changed. The installation instructions in the [okvis_ros github repository](https://github.com/ethz-asl/okvis_ros) is a useful source of information.
 
 ```bash
@@ -40,7 +40,7 @@ cd ..
 catkin build
 ```
 
-#### Running
+### Running
 
 Use the provided launch file and one of the bagfiles from our ETHZ_V4RL-CAB Dataset (links below) to run this code. The configuration file *config_fpga_v4r4.yaml* already contains the calibration data for this dataset, using one camera.
 

@@ -79,7 +79,7 @@ alt="Ground" width="200"  border="10" /></a>
 
 
 ### Calibration
-The images were captured using a [VI-Sensor](http://wiki.ros.org/vi_sensor) and calibrated using [ETHZ ASL Kalibr](https://github.com/ethz-asl/kalibr). Below are the calibration parameters. Note that T_SC is the transformation from the Camera to the Sensor(IMU). The two sets of values correspond to camera0's intrinsics and camera1's intrinsics, respectively.
+The images were captured using a [VI-Sensor](http://wiki.ros.org/vi_sensor) and calibrated using [ETHZ ASL Kalibr](https://github.com/ethz-asl/kalibr). Below are the calibration parameters. Note that T_SC is the transformation from the Camera to the Sensor (IMU). The two sets of values correspond to camera0's intrinsics and camera1's intrinsics, respectively.
 
 ```python
 
@@ -109,7 +109,8 @@ cameras:
 You can reproduce the qualitative results of our [paper](http://ieeexplore.ieee.org/document/7759714/) using this [bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmT3hiV3pPakdrTXc) and this ground-truth [laser scan](https://drive.google.com/open?id=0B82ekrhU9sDmN2QyOFlFNHA5c2c). You can also visualize the point-cloud inside the RViz software together with the laser scan of the facade. You only need to use *rosbag play* to run the bagfile. You can use the ros node *read* from the package [ethz-asl:point_cloud_io](
 https://github.com/ethz-asl/point_cloud_io).
 
-#Contact
+
+## Contact
 For any questions or bug reports, please create an issue if you have questions or bug reports. Alternatively, you can also contact me at lteixeira@mavt.ethz.ch. 
  
  

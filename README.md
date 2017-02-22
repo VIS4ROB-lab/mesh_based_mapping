@@ -1,7 +1,7 @@
 # Code & Dataset for mesh-based scene estimation 
 This work is described in the paper "Real-Time Mesh-based Scene Estimation for Aerial Inspection", by Lucas Teixeira and Margarita Chli, published in the Proceedings of the IEEE/RSJ Conference on Intelligent Robots and Systems (IROS) 2016 [[paper](http://ieeexplore.ieee.org/document/7759714/)].
 
-Video:
+#### Video:
 <a href="https://www.youtube.com/embed/LvmBjMvmZKA" target="_blank"><img src="http://img.youtube.com/vi/LvmBjMvmZKA/0.jpg" 
 alt="Mesh" width="240" height="180" border="10" /></a>
 

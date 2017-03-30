@@ -69,9 +69,9 @@ alt="Ground" width="200"  border="10" /></a>
 
 
 ### Data
-**Aerial 1** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmTTdIeFJXTlBBLVE) - [Youtube](http:/ /www.youtube.com/embed/SA4KoRjvx04)
+**Aerial 1** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmTTdIeFJXTlBBLVE) - [Youtube](http://www.youtube.com/embed/SA4KoRjvx04)
 
-**Aerial 2** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmNjZiMTUxUWlHcnc) - [Youtube](http:  //www.youtube.com/embed/FEQiClIlLZI)
+**Aerial 2** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmNjZiMTUxUWlHcnc) - [Youtube](http://www.youtube.com/embed/FEQiClIlLZI)
  
 **Aerial 3** - [Bagfile](https://drive.google.com/open?id=0B82ekrhU9sDmOUkzX2xrMWRSMEE) - [Youtube](http://www.youtube.com/embed/HLIJ59BRaBo)
 
